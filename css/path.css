@@ -1,0 +1,39 @@
+canvas {
+  background: #f8f8f8;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+body{
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #343434 0%, #000000 100%);
+  font-family: Arial
+}
+
+h1 {
+	color: white;
+}
+
+p {
+  color: white;
+}
+
+div.absolute {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 200px;
+  max-height: 100px;
+  /*overflow-y: scroll;*/
+  /*border: 3px solid #73AD21;*/
+}
+
+div.nope {
+  margin: 0 auto;
+  padding: 0px;
+  width: 800px;
+  position: relative;
+
+}

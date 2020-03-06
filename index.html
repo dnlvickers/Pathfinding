@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Daniel J. Vickers</title>
+		<link rel="stylesheet" type="text/css" href="css/path.css">
+		<link rel="icon" href="system.png" type="image/gif" sizes="16x16">
+	</head>
+
+	<body>
+		<h1 ><center>A* Path Finding</center></h1>
+
+		<canvas id="gameCanvas" width="800" height="600" onmousedown="mouse_down(event)" onmouseup="mouse_up()" onmousemove="mouse_draw(event)"></canvas>
+
+		<p>
+			Welcome to my path-finding algorithm!<br>
+			You have 4 different draw modes. Press the correct key to swap modes:<br>
+			-'w'   draw walls that the algorithm must solve around<br>
+			-'d'   delete walls<br>
+			-'s'   move the start location<br>
+			-'a'   moove the end location<br><br>
+			When you are done drawing, you can solve by pressing 'space'<br>
+			If you need to reset the map, just press 'r'<br>		
+		</p>
+
+		<p>
+			Type in the pizel size of the squares you want:<br>
+			<input type="number" id="pixelSize" value="25"><br>
+		</p>
+
+		<p>
+			Use the slider to change the weight of the path distance.<br>
+			Further to the left means the algorithm will try to solve with the least number of attempted squares.<br>
+			Further to the right means it will prioritize finding the shortest path to the end, even if it takes more squares.<br>
+			<input type="range" id="fWeight" value="50" min="0" max="100"><br>
+		</p>
+		
+
+		<script type="text/javascript" src="path.js"></script>
+	</body>
+
+</html>
